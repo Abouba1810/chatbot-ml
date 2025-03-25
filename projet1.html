@@ -1,0 +1,211 @@
+<head>
+    <!-- <title>ChatbotIA</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.atzTHADuJ5mfO3PfT0stOAAAAA?rs=1&pid=ImgDetMain">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <h1>ChatbotIA</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<script>
+    function ouvrirfenetre(){
+        let newwindows = window.open("","_blank","width=400,height=200");
+        newwindows.document.write("<h2>Modibo keita</h2>")
+    }
+</script>
+<style>
+    h1{
+    text-align: center ;
+    font-size: larger;
+    color: #000000;
+}
+body{
+    background: linear-gradient(135deg,#11ddcc,#e07730, #7c1d68 );
+    
+}
+button{
+    size: 30cm;
+}
+input{
+    position: initial;
+    align-items: center;
+    color: #000000;
+    background-color: #82bacf;
+}
+button{
+    align-items: center;
+    color: rgb(11, 14, 14);
+    background-color: rgb(0, 255, 255);
+    text-align: end;
+    background-position: 0%;
+}
+option{
+    background-color: #82bacf;
+    color: #000000;
+    width: 50px;
+    height: 100px;
+}
+label{
+    color: #000000;
+    background-color: rgb(238, 213, 69);
+}
+</style>
+
+    <label for="Question">Question</label>
+    <select name="Question" id="Question">
+        <option value="Qui est l'homme le plus riche">Qui est l'homme le plus riche</option>
+        <option value="Le president actuel du mali">Le president actuel du mali</option>
+        <option selected="selected" value="Le premier president du Mali">Le premier president du Mali</option>
+        <option value="infos">A propos</option>
+    </select>
+    <button onclick = "ouvrirfenetre">Soumettre</button>
+</body>  -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatbotIA</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.atzTHADuJ5mfO3PfT0stOAAAAA?rs=1&pid=ImgDetMain">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <h1>ChatbotIA</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="Question">Question :</label>
+    <select name="Question" id="Question">
+        <option value="richesse">Qui est l'homme le plus riche ?</option>
+        <option value="president_mali">Le président actuel du Mali ?</option>
+        <option value="premier_president" selected>Le premier président du Mali ?</option>
+        <option value="infos">À propos</option>
+    </select>
+   
+    <button onclick="ouvrirfenetre()">Soumettre</button>
+    
+    <br>
+    <a href="mailto:aindiarra8@gmail.com">Nous contacter</a>
+    
+    <br>
+    <br>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <script>
+        function ouvrirfenetre() {
+            let question = document.getElementById("Question").value;
+            let newWindow = window.open("", "_blank", "width=1000,height=1000");
+            
+            let reponse = "";
+            if (question === "richesse") {
+                reponse = "<strong>L'homme le plus riche du monde est Elon Musk (2025)</strong>";
+            } else if (question === "president_mali") {
+                reponse = "<strong>Le président actuel du Mali est Assimi Goïta.</strong>";
+            } else if (question === "premier_president") {
+                reponse = "<strong>Le premier président du Mali est Modibo Keïta.</strong>";
+            } else if (question === "infos") {
+                reponse = "<em>ChatbotIA, développé par Aboubacar Diarra pour répondre à vos questions.</em>";
+            }
+
+            newWindow.document.write(reponse);
+        }
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #00eaff, #00ff87, #fff700);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        label, select, button {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: rgb(0, 255, 255);
+            color: rgb(11, 14, 14);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00b3b3;
+        }
+
+        select {
+            background-color: #82bacf;
+            color: #000000;
+            padding: 5px;
+        }
+
+        option {
+            background-color: #82bacf;
+            color: #000000;
+        }
+        a{
+            color: #000000;
+        }
+    </style>
+</body>
+</html>
