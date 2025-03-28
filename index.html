@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ml-Qbot</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.atzTHADuJ5mfO3PfT0stOAAAAA?rs=1&pid=ImgDetMain">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <img width="300px" height="200px" src="https://th.bing.com/th/id/OIP.ifxBSLdV4oWhctBQ6cvFTwHaDt?w=348&h=175&c=7&r=0&o=5&pid=1.7" alt="">
+    <h1>ml-Qbot</h1>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="Question">Question :</label>
+    <select name="Question" id="Question">
+        <option selected value="infos">À propos</option>
+        <option value="richesse">Qui est l'homme le plus riche ?</option>
+        <option value="president_mali">Le président actuel du Mali ?</option>
+        <option value="premier_president" >Le premier président du Mali ?</option>
+        
+        <option value="empire">Qui est le fondateur de l'empire mandingue ?</option>
+        <option value="siby">Quel est la signification du nom de la localité de SIBY au mali ?</option>
+        <option value="fortune">À combien est estimée la fortune de MANSA MOUSSA ?</option>
+        <option value="independant">À quelle date le Mali prend son Indépendance ?</option>
+        <option value="peler">En quelle date Mansa moussa fait le pelerinage ?</option>
+        <option value="anne">En quelle année Modibo Keita mourru ?</option>
+        <option value="assim">En quelle année Assimi goita vient au pouvoir ?</option>
+        <option value="aes">À quel date a été crée L'AES ?</option>
+        <option value="aes1">Quels sont les états de l'AES ?</option>
+        <option value="peuple">Quel est pays le plus peuplé d'afrique ?</option>
+        <option value="pop">Quel est l'estimation de la population malienne ?</option>
+    </select>
+   
+    <button onclick="ouvrirfenetre()">Confirmer</button>
+    
+    <br>
+    <a href="mailto:aindiarra8@gmail.com">Pour nous contacter</a>
+    
+    <br>
+    <br>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+<script>
+    function ouvrirfenetre() {
+    let question = document.getElementById("Question").value;
+    let newWindow = window.open("", "_blank", "width=1000,height=1000");
+    
+    let reponse = "";
+    if (question === "richesse") {
+        reponse = "<strong><h2>L'homme le plus riche du monde est Elon Musk (2025)</h2></strong>";
+    } else if (question === "president_mali") {
+        reponse = "<strong><h2>Le président actuel du Mali est le Colonel Assimi Goïta.</h2></strong>";
+    } else if (question === "premier_president") {
+        reponse = "<strong><h2>Le premier président du Mali est Modibo Keïta.</h2></strong>";
+    } else if (question === "infos") {
+        reponse = "<strong><h2>j'ai Nommé ml-Qbot ml faisant référence à mon Pays le MALI q pour questions et bot c'est à dire un systeme de reponse à des questions préenregistrées ,par Aboubacar Diarra(L'auteur).</h2></strong>";
+    }else if (question==="empire"){
+        reponse=" <strong><h2>soundjata keita au 13e siècle </h2></strong>"
+    } else if (question==="siby"){
+        reponse="<strong><h2>SIBY veut dire dormir aujourd'hui à un endroit à ce qui parrait ils l'ont déclaré alors le lieu a prit ce nom</h2></strong>"
+    } else if (question==="fortune"){
+        reponse=" <strong><h2>Estimée à 400 milliards de dollars soit environ  210 trillions de CFA</h2></strong>"
+    } else if (question==="independant"){
+        reponse="<strong><h2>le 22 septembre 1960</h2></strong>"
+    } else if (question==="peler"){
+        reponse="<strong><h2>En 1324</h2></strong>"
+    } else if (question==="anne"){
+        reponse="<strong><h2>En 1977</h2></strong>"
+    } else if (question==="assim"){
+        reponse="<strong><h2>En 2021</h2></strong>"
+    } else if (question==="aes"){
+        reponse="<strong><h2>Le 16 septembre 2023</h2></strong>"
+    } else if (question==="aes1"){
+        reponse="<strong><h2>LE MALI,LE BURKINA FASO ET LE NIGER</h2></strong>"
+    } else if (question==="peuple"){
+        reponse="<strong><h2>Le Nigeria avec pour estimation 220 millions en 2025</h2></strong>"
+    } else if (question==="pop"){
+        reponse="<strong><h2><Em>Environ 22 millions en 2025</Em></h2></strong>"
+    }
+
+    newWindow.document.write(reponse);
+}
+</script>
+
+<style>
+    body {
+    background: linear-gradient(to LEFT  ,#F5F5DC, #A9A9A9 );
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #000000;
+}
+
+label, select, button {
+    font-size: 18px;
+    margin: 10px;
+}
+
+button {
+    background-color: rgb(23, 7, 250);
+    color: rgb(11, 14, 14);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b3b3;
+}
+
+select {
+    background-color: #86bed3;
+    color: #000000;
+    padding: 5px;
+}
+
+option {
+    background-color: #82bacf;
+    color: #000000;
+}
+a{
+    color: #000000;
+}
+:blank{
+    background: #A9A9A9;
+    text-align: center;
+}
+</style>
+</body>
+</html>
